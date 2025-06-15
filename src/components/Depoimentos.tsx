@@ -26,7 +26,7 @@ const Depoimentos = () => (
   <section className="w-full max-w-6xl mx-auto py-20 px-4">
     <div className="text-center mb-16">
       <h2 className="text-3xl md:text-4xl font-black mb-6 tracking-tight">
-        O que nossos <span className="text-[#f05a39]">parceiros</span> dizem
+        O que nossos <span className="text-[#ff9400]">parceiros</span> dizem
       </h2>
       <p className="text-lg text-gray-700 max-w-2xl mx-auto">
         Profissionais que já transformaram seu conhecimento em cursos de sucesso com a Trilo
@@ -41,10 +41,10 @@ const Depoimentos = () => (
           style={{ animationDelay: `${i * 100}ms` }}
         >
           {/* Background pattern */}
-          <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#f05a39]/5 to-[#f05a39]/10 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-500" />
+          <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#ff9400]/5 to-[#ff9400]/10 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-500" />
           
           <div className="relative z-10">
-            <Quote className="text-[#f05a39] mb-4 opacity-70" size={32} />
+            <Quote className="text-[#ff9400] mb-4 opacity-70" size={32} />
             
             <p className="text-gray-700 mb-6 font-medium leading-relaxed italic">
               "{dep.texto}"
@@ -52,16 +52,16 @@ const Depoimentos = () => (
 
             <div className="flex items-center gap-1 mb-4">
               {[...Array(dep.estrelas)].map((_, idx) => (
-                <Star key={idx} size={20} className="text-yellow-500 fill-current" />
+                <Star key={idx} size={20} className="text-[#ff9400] fill-[#ff9400]" />
               ))}
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#f05a39] to-[#c84527] flex items-center justify-center">
+              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#ff9400] to-[#d87e00] flex items-center justify-center">
                 <User size={24} className="text-white" />
               </div>
               <div>
-                <h4 className="font-bold text-[#f05a39] text-lg">{dep.nome}</h4>
+                <h4 className="font-bold text-[#ff9400] text-lg">{dep.nome}</h4>
                 <p className="text-gray-600 font-medium">{dep.cargo}</p>
               </div>
             </div>
@@ -73,3 +73,4 @@ const Depoimentos = () => (
 );
 
 export default Depoimentos;
+

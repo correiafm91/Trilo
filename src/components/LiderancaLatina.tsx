@@ -1,5 +1,3 @@
-
-
 import { Trophy, Users, Award, Globe2 } from "lucide-react";
 
 const estatisticas = [
@@ -50,13 +48,11 @@ const LiderancaLatina = () => (
           <Trophy className="text-white" size={24} />
           <span className="text-white font-bold text-lg">Liderança Continental</span>
         </div>
-
         <h2 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
-          A <span className="text-[#ff9400]">Maior Empresa</span><br />
+          A <span className="text-white">Maior Empresa</span><br />
           de Produção de Cursos<br />
-          da <span className="text-[#ff9400]">América Latina</span>
+          da <span className="text-white">América Latina</span>
         </h2>
-
         <p className="text-xl text-white max-w-3xl mx-auto font-medium leading-relaxed">
           Transformamos conhecimento em negócios digitais há mais de uma década, 
           sendo referência absoluta em educação online em todo o continente.
@@ -93,4 +89,3 @@ const LiderancaLatina = () => (
 );
 
 export default LiderancaLatina;
-
