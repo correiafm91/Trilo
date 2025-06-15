@@ -1,4 +1,3 @@
-
 import { User, FileText, Video, Globe, TrendingUp } from "lucide-react";
 
 const processos = [
@@ -69,7 +68,7 @@ const Processo = () => (
                   {processo.numero}
                 </span>
                 <div className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${processo.cor} flex items-center justify-center group-hover:rotate-12 transition-transform duration-300`}>
-                  <IconeComponente size={24} color="#ff9400" />
+                  <IconeComponente size={24} className="text-white" />
                 </div>
               </div>
 
@@ -89,4 +88,3 @@ const Processo = () => (
 );
 
 export default Processo;
-
