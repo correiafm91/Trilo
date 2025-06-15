@@ -10,7 +10,7 @@ const beneficios = [
   {
     titulo: "Novas Fontes de Renda",
     desc: "Cursos online oferecem receita escalável, previsível e ampliam seu impacto.",
-    icone: <Coins size={34} className="text-[#6985c0] drop-shadow-md bg-white/60 rounded-full p-1.5" />
+    icone: <Coins size={34} className="text-[#f05a39] drop-shadow-md bg-white/60 rounded-full p-1.5" />
   },
   {
     titulo: "Zero Complexidade Técnica",
@@ -41,3 +41,4 @@ const Beneficios = () => (
 );
 
 export default Beneficios;
+
