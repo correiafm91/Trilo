@@ -5,7 +5,6 @@ import ComoFunciona from "../components/ComoFunciona";
 import Beneficios from "../components/Beneficios";
 import Depoimentos from "../components/Depoimentos";
 import Faq from "../components/Faq";
-import Formulario from "../components/Formulario";
 import Footer from "../components/Footer";
 
 const Index = () => {
@@ -18,7 +17,6 @@ const Index = () => {
         <Beneficios />
         <Depoimentos />
         <Faq />
-        <Formulario />
       </main>
       <Footer />
     </div>

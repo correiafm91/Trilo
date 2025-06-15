@@ -10,7 +10,7 @@ const etapas = [
   {
     titulo: "2. Produção Profissional",
     desc: "Equipe, roteiro, gravação, edição — padrão global, você só foca no conteúdo. Todo o resto é conosco.",
-    icone: <Clapperboard size={42} className="text-[#6985c0] drop-shadow-lg bg-white/70 rounded-full p-2" />
+    icone: <Clapperboard size={42} className="text-[#f05a39] drop-shadow-lg bg-white/70 rounded-full p-2" />
   },
   {
     titulo: "3. Lançamento e Suporte",
@@ -22,7 +22,7 @@ const etapas = [
 const ComoFunciona = () => (
   <section className="w-full max-w-5xl mx-auto py-20 px-4">
     <h2 className="text-3xl font-black mb-12 text-center tracking-tight">
-      Como funciona <span className="text-[#6985c0]">na prática?</span>
+      Como funciona <span className="text-[#f05a39]">na prática?</span>
     </h2>
     <div className="flex flex-col md:flex-row gap-10 md:gap-8 md:justify-between">
       {etapas.map((e, i) => (

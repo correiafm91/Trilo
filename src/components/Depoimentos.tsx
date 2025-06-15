@@ -5,21 +5,21 @@ const depoimentos = [
   {
     nome: "Dr. Carlos Silva",
     cargo: "Médico Cardiologista",
-    foto: "👨‍⚕️",
+    foto: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face",
     texto: "A Trilo transformou meus 20 anos de experiência em cardiologia em um curso que já impactou mais de 5.000 profissionais. O processo foi incrivelmente profissional.",
     estrelas: 5
   },
   {
     nome: "Marina Santos",
     cargo: "Consultora de Marketing",
-    foto: "👩‍💼",
+    foto: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop&crop=face",
     texto: "Em 6 meses, meu curso de marketing digital se tornou referência no mercado. A equipe da Trilo cuidou de tudo enquanto eu focava no que sei fazer melhor.",
     estrelas: 5
   },
   {
     nome: "Prof. João Oliveira",
     cargo: "Engenheiro de Software",
-    foto: "👨‍💻",
+    foto: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=400&h=400&fit=crop&crop=face",
     texto: "Nunca imaginei que seria tão fácil transformar meu conhecimento técnico em um negócio lucrativo. A Trilo fez toda a diferença na minha carreira.",
     estrelas: 5
   }
@@ -44,7 +44,7 @@ const Depoimentos = () => (
           style={{ animationDelay: `${i * 100}ms` }}
         >
           {/* Background pattern */}
-          <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#f05a39]/5 to-[#6985c0]/5 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-500" />
+          <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#f05a39]/5 to-[#f05a39]/10 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-500" />
           
           <div className="relative z-10">
             <Quote className="text-[#f05a39] mb-4 opacity-70" size={32} />
@@ -60,10 +60,14 @@ const Depoimentos = () => (
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="text-4xl">{dep.foto}</div>
+              <img 
+                src={dep.foto} 
+                alt={dep.nome}
+                className="w-14 h-14 rounded-full object-cover border-2 border-[#f05a39]/20"
+              />
               <div>
                 <h4 className="font-bold text-[#f05a39] text-lg">{dep.nome}</h4>
-                <p className="text-[#6985c0] font-medium">{dep.cargo}</p>
+                <p className="text-gray-600 font-medium">{dep.cargo}</p>
               </div>
             </div>
           </div>
