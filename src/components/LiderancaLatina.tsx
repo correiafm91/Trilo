@@ -3,25 +3,25 @@ import { Trophy, Users, Award, Globe2 } from "lucide-react";
 
 const estatisticas = [
   {
-    numero: "15.000+",
-    descricao: "Cursos produzidos",
+    numero: "134+",
+    descricao: "Cursos lançados",
     icone: Trophy,
     cor: "text-yellow-600"
   },
   {
-    numero: "2.5M+", 
-    descricao: "Alunos impactados",
+    numero: "1M+", 
+    descricao: "Alunas impactadas",
     icone: Users,
     cor: "text-blue-600"
   },
   {
-    numero: "500+",
-    descricao: "Especialistas parceiros",
+    numero: "5M",
+    descricao: "Em vendas",
     icone: Award,
     cor: "text-green-600"
   },
   {
-    numero: "12",
+    numero: "4",
     descricao: "Países atendidos",
     icone: Globe2,
     cor: "text-purple-600"
@@ -40,24 +40,24 @@ const LiderancaLatina = () => (
     <div className="relative z-10 max-w-6xl mx-auto text-center">
       <div className="mb-16">
         <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 mb-6">
-          <Trophy className="text-yellow-300" size={24} />
+          <Trophy className="text-white" size={24} />
           <span className="text-white font-bold text-lg">Liderança Continental</span>
         </div>
         
         <h2 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
-          A <span className="text-yellow-300">Maior Empresa</span><br />
+          A <span className="text-white">Maior Empresa</span><br />
           de Produção de Cursos<br />
-          da <span className="text-yellow-300">América Latina</span>
+          da <span className="text-white">América Latina</span>
         </h2>
         
-        <p className="text-xl text-white/90 max-w-3xl mx-auto font-medium leading-relaxed">
+        <p className="text-xl text-white max-w-3xl mx-auto font-medium leading-relaxed">
           Transformamos conhecimento em negócios digitais há mais de uma década, 
           sendo referência absoluta em educação online em todo o continente.
         </p>
       </div>
 
       {/* Estatísticas */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         {estatisticas.map((stat, i) => {
           const IconeComponente = stat.icone;
           return (
@@ -73,30 +73,13 @@ const LiderancaLatina = () => (
                 <span className="text-3xl md:text-4xl font-black text-white mb-2">
                   {stat.numero}
                 </span>
-                <span className="text-white/80 font-medium text-center">
+                <span className="text-white font-medium text-center">
                   {stat.descricao}
                 </span>
               </div>
             </div>
           );
         })}
-      </div>
-
-      {/* Call to action */}
-      <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
-        <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-          Faça parte da nossa história de sucesso
-        </h3>
-        <p className="text-white/90 text-lg mb-6 max-w-2xl mx-auto">
-          Junte-se aos milhares de especialistas que já transformaram suas carreiras 
-          conosco e tornaram-se referência em suas áreas.
-        </p>
-        <a
-          href="#contato"
-          className="inline-block bg-white text-[#f05a39] text-lg font-bold px-10 py-4 rounded-full shadow-xl hover:bg-gray-100 active:scale-95 transition-all duration-150 hover:scale-105"
-        >
-          Quero Ser o Próximo
-        </a>
       </div>
     </div>
   </section>
