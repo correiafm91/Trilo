@@ -17,12 +17,6 @@ const Footer = () => (
         >
           Enviar E-mail
         </a>
-        <a 
-          href="tel:+5511999999999"
-          className="border-2 border-[#f05a39] text-[#f05a39] font-bold px-8 py-3 rounded-full hover:bg-[#f05a39] hover:text-white transition-all duration-200"
-        >
-          Ligar Agora
-        </a>
       </div>
     </div>
     
@@ -36,3 +30,4 @@ const Footer = () => (
 );
 
 export default Footer;
+
