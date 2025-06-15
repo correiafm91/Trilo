@@ -1,4 +1,5 @@
 
+
 import { Trophy, Users, Award, Globe2 } from "lucide-react";
 
 const estatisticas = [
@@ -18,7 +19,7 @@ const estatisticas = [
     numero: "5M+",
     descricao: "Em vendas",
     icone: Award,
-    cor: "text-green-600"
+    cor: "text-[#ff9400]"
   },
   {
     numero: "4+",
@@ -30,12 +31,12 @@ const estatisticas = [
     numero: "6",
     descricao: "Anos de mercado",
     icone: Award,
-    cor: "text-orange-600"
+    cor: "text-[#ff9400]"
   }
 ];
 
 const LiderancaLatina = () => (
-  <section className="w-full bg-gradient-to-br from-[#f05a39] via-[#c84527] to-[#a63620] py-20 px-4 relative overflow-hidden">
+  <section className="w-full bg-gradient-to-br from-[#ff9400] via-[#d87e00] to-[#a36b00] py-20 px-4 relative overflow-hidden">
     {/* Background decorativo */}
     <div className="absolute inset-0 opacity-10">
       <div className="absolute top-10 left-10 w-40 h-40 bg-white rounded-full blur-3xl"></div>
@@ -51,9 +52,9 @@ const LiderancaLatina = () => (
         </div>
 
         <h2 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
-          A <span className="text-white">Maior Empresa</span><br />
+          A <span className="text-[#ff9400]">Maior Empresa</span><br />
           de Produção de Cursos<br />
-          da <span className="text-white">América Latina</span>
+          da <span className="text-[#ff9400]">América Latina</span>
         </h2>
 
         <p className="text-xl text-white max-w-3xl mx-auto font-medium leading-relaxed">
@@ -73,10 +74,10 @@ const LiderancaLatina = () => (
               style={{ animationDelay: `${i * 100}ms` }}
             >
               <div className="flex flex-col items-center">
-                <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className={`w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 ${stat.cor}`}>
                   <IconeComponente size={32} className="text-white" />
                 </div>
-                <span className="text-3xl md:text-4xl font-black text-white mb-2">
+                <span className="text-3xl md:text-4xl font-black text-[#ff9400] mb-2">
                   {stat.numero}
                 </span>
                 <span className="text-white font-medium text-center">
@@ -92,3 +93,4 @@ const LiderancaLatina = () => (
 );
 
 export default LiderancaLatina;
+
