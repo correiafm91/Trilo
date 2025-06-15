@@ -1,11 +1,11 @@
 
-import { Target3D, Clapperboard, Rocket } from "lucide-react";
+import { Target, Clapperboard, Rocket } from "lucide-react";
 
 const etapas = [
   {
     titulo: "1. Encontro de Estratégia",
     desc: "Entendemos seu conhecimento, público e objetivos. Juntos desenhamos o melhor formato para o seu curso digital.",
-    icone: <Target3D size={44} className="text-[#f05a39] drop-shadow-lg bg-white/70 rounded-full p-2" />
+    icone: <Target size={44} className="text-[#f05a39] drop-shadow-lg bg-white/70 rounded-full p-2" />
   },
   {
     titulo: "2. Produção Profissional",
