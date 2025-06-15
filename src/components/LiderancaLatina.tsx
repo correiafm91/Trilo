@@ -25,6 +25,12 @@ const estatisticas = [
     descricao: "Países atendidos",
     icone: Globe2,
     cor: "text-purple-600"
+  },
+  {
+    numero: "6",
+    descricao: "Anos de mercado",
+    icone: Award,
+    cor: "text-orange-600"
   }
 ];
 
