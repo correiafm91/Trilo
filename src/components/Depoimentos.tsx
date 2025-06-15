@@ -1,25 +1,22 @@
 
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, User } from "lucide-react";
 
 const depoimentos = [
   {
     nome: "Dr. Carlos Silva",
     cargo: "Médico Cardiologista",
-    foto: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face",
     texto: "A Trilo transformou meus 20 anos de experiência em cardiologia em um curso que já impactou mais de 5.000 profissionais. O processo foi incrivelmente profissional.",
     estrelas: 5
   },
   {
     nome: "Marina Santos",
     cargo: "Consultora de Marketing",
-    foto: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop&crop=face",
     texto: "Em 6 meses, meu curso de marketing digital se tornou referência no mercado. A equipe da Trilo cuidou de tudo enquanto eu focava no que sei fazer melhor.",
     estrelas: 5
   },
   {
     nome: "Prof. João Oliveira",
     cargo: "Engenheiro de Software",
-    foto: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=400&h=400&fit=crop&crop=face",
     texto: "Nunca imaginei que seria tão fácil transformar meu conhecimento técnico em um negócio lucrativo. A Trilo fez toda a diferença na minha carreira.",
     estrelas: 5
   }
@@ -60,11 +57,9 @@ const Depoimentos = () => (
             </div>
 
             <div className="flex items-center gap-4">
-              <img 
-                src={dep.foto} 
-                alt={dep.nome}
-                className="w-14 h-14 rounded-full object-cover border-2 border-[#f05a39]/20"
-              />
+              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#f05a39] to-[#c84527] flex items-center justify-center">
+                <User size={24} className="text-white" />
+              </div>
               <div>
                 <h4 className="font-bold text-[#f05a39] text-lg">{dep.nome}</h4>
                 <p className="text-gray-600 font-medium">{dep.cargo}</p>

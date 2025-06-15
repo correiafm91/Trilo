@@ -13,7 +13,11 @@ const faqs = [
   },
   {
     pergunta: "Como funciona o pagamento?",
-    resposta: "O modelo é personalizado: você pode escolher entre porcentagem sobre vendas, pagamento único, ou dividir a receita conforme seu projeto."
+    resposta: "O pagamento é feito por projeto e dividido em parcelas até a conclusão. Você investe de forma parcelada conforme o andamento do seu curso."
+  },
+  {
+    pergunta: "Quanto tempo leva para produzir o curso?",
+    resposta: "O processo completo de produção do seu curso leva até 3 meses, desde a estratégia inicial até o lançamento final."
   }
 ];
 
@@ -33,13 +37,13 @@ const Faq = () => {
             className="border border-[#ffdfd6] rounded-2xl px-6 py-4 bg-white/90 shadow-md animate-fade-in transition-shadow duration-150 group hover:shadow-lg"
           >
             <button
-              className="w-full flex items-center justify-between text-lg font-semibold focus:outline-none text-[#6985c0] hover:text-[#f05a39] transition-colors select-text"
+              className="w-full flex items-center justify-between text-lg font-semibold focus:outline-none text-gray-700 hover:text-[#f05a39] transition-colors select-text"
               onClick={() => setOpen(open === idx ? null : idx)}
               aria-expanded={open === idx}
               aria-controls={`faq-content-${idx}`}
             >
               <span className="flex items-center gap-2">
-                <HelpCircle className="inline text-[#6985c0]" size={20} />
+                <HelpCircle className="inline text-[#f05a39]" size={20} />
                 {faq.pergunta}
               </span>
               <span className={`ml-4 text-xl transition-transform duration-200 ${open === idx ? "rotate-180 text-[#f05a39]" : ""}`}>▼</span>
