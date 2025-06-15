@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import ComoFunciona from "../components/ComoFunciona";
 import Processo from "../components/Processo";
+import LiderancaLatina from "../components/LiderancaLatina";
 import Beneficios from "../components/Beneficios";
 import Depoimentos from "../components/Depoimentos";
 import Faq from "../components/Faq";
@@ -25,6 +26,7 @@ const Index = () => {
           <Hero />
           <ComoFunciona />
           <Processo />
+          <LiderancaLatina />
           <Beneficios />
           <Depoimentos />
           <Faq />
