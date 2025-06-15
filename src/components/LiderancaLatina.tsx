@@ -15,13 +15,13 @@ const estatisticas = [
     cor: "text-blue-600"
   },
   {
-    numero: "5M",
+    numero: "5M+",
     descricao: "Em vendas",
     icone: Award,
     cor: "text-green-600"
   },
   {
-    numero: "4",
+    numero: "4+",
     descricao: "Países atendidos",
     icone: Globe2,
     cor: "text-purple-600"
