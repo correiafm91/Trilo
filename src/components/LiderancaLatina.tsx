@@ -1,3 +1,4 @@
+
 import { Trophy, Users, Award, Globe2 } from "lucide-react";
 
 const estatisticas = [
@@ -73,7 +74,7 @@ const LiderancaLatina = () => (
                 <div className={`w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 ${stat.cor}`}>
                   <IconeComponente size={32} className="text-white" />
                 </div>
-                <span className="text-3xl md:text-4xl font-black text-[#ff9400] mb-2">
+                <span className="text-3xl md:text-4xl font-black text-white mb-2">
                   {stat.numero}
                 </span>
                 <span className="text-white font-medium text-center">
@@ -89,3 +90,4 @@ const LiderancaLatina = () => (
 );
 
 export default LiderancaLatina;
+
