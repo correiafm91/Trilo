@@ -36,7 +36,7 @@ const estatisticas = [
 ];
 
 const LiderancaLatina = () => (
-  <section className="w-full bg-[#ff44a4a] py-20 px-4 relative overflow-hidden">
+  <section className="w-full bg-[#ff4a4a] py-20 px-4 relative overflow-hidden">
     {/* Background decorativo */}
     <div className="absolute inset-0 opacity-10">
       <div className="absolute top-10 left-10 w-40 h-40 bg-white rounded-full blur-3xl"></div>
@@ -72,7 +72,7 @@ const LiderancaLatina = () => (
               style={{ animationDelay: `${i * 100}ms` }}
             >
               <div className="flex flex-col items-center">
-                <div className={`w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 ${stat.cor}`}>
+                <div className={`w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
                   <IconeComponente size={32} className="text-white" />
                 </div>
                 <span className="text-3xl md:text-4xl font-black text-white mb-2">
