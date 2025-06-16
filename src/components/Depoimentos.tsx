@@ -23,12 +23,12 @@ const depoimentos = [
 ];
 
 const Depoimentos = () => (
-  <section className="w-full max-w-6xl mx-auto py-20 px-4">
+  <section className="w-full max-w-6xl mx-auto py-20 px-4 bg-[#ff4a4a]">
     <div className="text-center mb-16">
-      <h2 className="text-3xl md:text-4xl font-black mb-6 tracking-tight">
-        O que nossos <span className="text-[#ff9400]">parceiros</span> dizem
+      <h2 className="text-3xl md:text-4xl font-black mb-6 tracking-tight text-white">
+        O que nossos <span className="text-white">parceiros</span> dizem
       </h2>
-      <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+      <p className="text-lg text-white max-w-2xl mx-auto">
         Profissionais que já transformaram seu conhecimento em cursos de sucesso com a Trilo
       </p>
     </div>
@@ -37,32 +37,32 @@ const Depoimentos = () => (
       {depoimentos.map((dep, i) => (
         <div
           key={dep.nome}
-          className="bg-white rounded-3xl p-8 shadow-xl border border-[#ffe5de] hover:shadow-2xl hover:scale-105 transition-all duration-300 group animate-fade-in relative overflow-hidden"
+          className="bg-white/10 rounded-3xl p-8 shadow-xl border border-white/20 hover:shadow-2xl hover:scale-105 transition-all duration-300 group animate-fade-in relative overflow-hidden backdrop-blur-sm"
           style={{ animationDelay: `${i * 100}ms` }}
         >
           {/* Background pattern */}
-          <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#ff9400]/5 to-[#ff9400]/10 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-500" />
+          <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-white/5 to-white/10 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-500" />
           
           <div className="relative z-10">
-            <Quote className="text-[#ff9400] mb-4 opacity-70" size={32} />
+            <Quote className="text-white mb-4 opacity-70" size={32} />
             
-            <p className="text-gray-700 mb-6 font-medium leading-relaxed italic">
+            <p className="text-white mb-6 font-medium leading-relaxed italic">
               "{dep.texto}"
             </p>
 
             <div className="flex items-center gap-1 mb-4">
               {[...Array(dep.estrelas)].map((_, idx) => (
-                <Star key={idx} size={20} className="text-[#ff9400] fill-[#ff9400]" />
+                <Star key={idx} size={20} className="text-white fill-white" />
               ))}
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#ff9400] to-[#d87e00] flex items-center justify-center">
-                <User size={24} className="text-white" />
+              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-white to-white/80 flex items-center justify-center">
+                <User size={24} className="text-[#ff4a4a]" />
               </div>
               <div>
-                <h4 className="font-bold text-[#ff9400] text-lg">{dep.nome}</h4>
-                <p className="text-gray-600 font-medium">{dep.cargo}</p>
+                <h4 className="font-bold text-white text-lg">{dep.nome}</h4>
+                <p className="text-white font-medium">{dep.cargo}</p>
               </div>
             </div>
           </div>
@@ -73,4 +73,3 @@ const Depoimentos = () => (
 );
 
 export default Depoimentos;
-
