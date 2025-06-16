@@ -21,8 +21,13 @@ const Footer = () => (
     </div>
     
     <div className="relative z-10 border-t border-white/20 pt-8">
-      <span className="text-white">
-        © {new Date().getFullYear()} <span className="text-white font-bold">Trilo</span>
+      <span className="text-white flex items-center justify-center gap-2">
+        © {new Date().getFullYear()} 
+        <img 
+          src="https://i.postimg.cc/L5VJKZ29/508648700-18063735398144210-1168888630606430414-n-removebg-preview.png" 
+          alt="Logo"
+          className="h-6 w-auto inline"
+        />
         . Todos os direitos reservados.
       </span>
     </div>

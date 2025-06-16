@@ -3,8 +3,12 @@ const Header = () => (
   <header className="w-full py-6 px-8 md:px-16 flex items-center justify-between border-b border-white/20 shadow-sm bg-[#ff4a4a] sticky top-0 z-30 relative">
     {/* Linha gradiente sutil topo */}
     <div className="absolute left-0 top-0 w-full h-1.5 bg-gradient-to-r from-white via-white/50 to-white opacity-80 pointer-events-none" />
-    <div className="text-2xl md:text-3xl font-extrabold tracking-tight text-white select-none drop-shadow-sm">
-      Trilo
+    <div className="flex items-center">
+      <img 
+        src="https://i.postimg.cc/L5VJKZ29/508648700-18063735398144210-1168888630606430414-n-removebg-preview.png" 
+        alt="Logo"
+        className="h-8 md:h-10 w-auto select-none drop-shadow-sm"
+      />
     </div>
     <a
       href="#contato"
