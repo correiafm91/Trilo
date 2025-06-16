@@ -1,4 +1,5 @@
 
+
 import { Trophy, Users, Award, Globe2 } from "lucide-react";
 
 const estatisticas = [
@@ -35,7 +36,7 @@ const estatisticas = [
 ];
 
 const LiderancaLatina = () => (
-  <section className="w-full bg-gradient-to-br from-[#ff9400] via-[#d87e00] to-[#a36b00] py-20 px-4 relative overflow-hidden">
+  <section className="w-full bg-[#ff44a4a] py-20 px-4 relative overflow-hidden">
     {/* Background decorativo */}
     <div className="absolute inset-0 opacity-10">
       <div className="absolute top-10 left-10 w-40 h-40 bg-white rounded-full blur-3xl"></div>
@@ -50,9 +51,9 @@ const LiderancaLatina = () => (
           <span className="text-white font-bold text-lg">Liderança Continental</span>
         </div>
         <h2 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
-          A <span className="text-white">Maior Empresa</span><br />
+          A Maior Empresa<br />
           de Produção de Cursos<br />
-          da <span className="text-white">América Latina</span>
+          da América Latina
         </h2>
         <p className="text-xl text-white max-w-3xl mx-auto font-medium leading-relaxed">
           Transformamos conhecimento em negócios digitais há mais de uma década, 
