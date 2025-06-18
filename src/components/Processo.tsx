@@ -7,45 +7,45 @@ const processos = [
     titulo: "Análise do seu conhecimento",
     descricao: "Identificamos sua expertise e definimos o público-alvo ideal para maximizar o potencial do seu curso.",
     icone: User,
-    cor: "from-white to-white/80"
+    cor: "from-gray-600 to-gray-800"
   },
   {
     numero: "02", 
     titulo: "Criação do roteiro completo",
     descricao: "Nossa equipe desenvolve todo o roteiro estruturado, com metodologia pedagógica para garantir aprendizado efetivo.",
     icone: FileText,
-    cor: "from-white to-white/80"
+    cor: "from-gray-600 to-gray-800"
   },
   {
     numero: "03",
     titulo: "Gravação e edição profissional", 
     descricao: "Você grava seguindo nosso roteiro e nossa equipe cuida de toda a edição, motion graphics e finalização.",
     icone: Video,
-    cor: "from-white to-white/80"
+    cor: "from-gray-600 to-gray-800"
   },
   {
     numero: "04",
     titulo: "Publicação em plataformas",
     descricao: "Colocamos seu curso nas principais plataformas de ensino online com toda a configuração técnica necessária.",
     icone: Globe,
-    cor: "from-white to-white/80"
+    cor: "from-gray-600 to-gray-800"
   },
   {
     numero: "05",
     titulo: "Estratégias de marketing",
     descricao: "Implementamos campanhas de marketing digital personalizadas para alavancar as vendas do seu curso.",
     icone: TrendingUp,
-    cor: "from-white to-white/80"
+    cor: "from-gray-600 to-gray-800"
   }
 ];
 
 const Processo = () => (
-  <section className="w-full max-w-7xl mx-auto py-20 px-4 bg-[#ff4a4a]">
+  <section className="w-full max-w-7xl mx-auto py-20 px-4 bg-black">
     <div className="text-center mb-16">
       <h2 className="text-3xl md:text-4xl font-black mb-6 tracking-tight text-white">
-        Nosso <span className="text-white">Processo</span> Completo
+        Nosso <span className="text-gray-400">Processo</span> Completo
       </h2>
-      <p className="text-lg text-white max-w-3xl mx-auto">
+      <p className="text-lg text-gray-300 max-w-3xl mx-auto">
         Do seu conhecimento ao curso online de sucesso: cuidamos de cada detalhe para você focar no que sabe fazer melhor
       </p>
     </div>
@@ -56,7 +56,7 @@ const Processo = () => (
         return (
           <div
             key={processo.numero}
-            className="bg-white/10 rounded-3xl p-6 shadow-xl border border-white/20 hover:shadow-2xl hover:scale-105 transition-all duration-300 group animate-fade-in relative overflow-hidden backdrop-blur-sm"
+            className="bg-gray-900 rounded-3xl p-6 shadow-xl border border-gray-700 hover:shadow-2xl hover:scale-105 transition-all duration-300 group animate-fade-in relative overflow-hidden backdrop-blur-sm"
             style={{ animationDelay: `${i * 150}ms` }}
           >
             {/* Background gradient */}
@@ -65,11 +65,11 @@ const Processo = () => (
             <div className="relative z-10">
               {/* Número */}
               <div className="flex items-center justify-between mb-4">
-                <span className="text-3xl font-black text-white opacity-50">
+                <span className="text-3xl font-black text-gray-500 opacity-50">
                   {processo.numero}
                 </span>
                 <div className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${processo.cor} flex items-center justify-center group-hover:rotate-12 transition-transform duration-300`}>
-                  <IconeComponente size={24} className="text-[#ff4a4a]" />
+                  <IconeComponente size={24} className="text-white" />
                 </div>
               </div>
 
@@ -77,7 +77,7 @@ const Processo = () => (
               <h3 className="text-lg font-bold text-white mb-3 leading-tight">
                 {processo.titulo}
               </h3>
-              <p className="text-white text-sm leading-relaxed">
+              <p className="text-gray-300 text-sm leading-relaxed">
                 {processo.descricao}
               </p>
             </div>

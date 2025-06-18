@@ -11,9 +11,7 @@ import Footer from "../components/Footer";
 
 const Index = () => {
   return (
-    <div className="bg-[#ff4a4a] text-white min-h-screen flex flex-col relative overflow-hidden">
-      {/* Fundo decorativo removido para manter cor sólida */}
-      
+    <div className="bg-black text-white min-h-screen flex flex-col relative overflow-hidden">
       <div className="relative z-10">
         <Header />
         <main className="flex-1 w-full">

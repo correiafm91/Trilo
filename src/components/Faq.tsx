@@ -25,28 +25,28 @@ const Faq = () => {
   const [open, setOpen] = React.useState<number | null>(null);
 
   return (
-    <section className="w-full max-w-3xl mx-auto py-16 px-4 bg-[#ff4a4a]">
+    <section className="w-full max-w-3xl mx-auto py-16 px-4 bg-black">
       <h2 className="text-3xl font-black mb-8 text-center flex items-center justify-center gap-2 text-white">
-        <HelpCircle className="text-white mb-1" size={28} />
-        Perguntas <span className="text-white">Frequentes</span>
+        <HelpCircle className="text-gray-400 mb-1" size={28} />
+        Perguntas <span className="text-gray-400">Frequentes</span>
       </h2>
       <div className="space-y-5">
         {faqs.map((faq, idx) => (
           <div
             key={faq.pergunta}
-            className="border border-white/20 rounded-2xl px-6 py-4 bg-white/10 shadow-md animate-fade-in transition-shadow duration-150 group hover:shadow-lg backdrop-blur-sm"
+            className="border border-gray-700 rounded-2xl px-6 py-4 bg-gray-900 shadow-md animate-fade-in transition-shadow duration-150 group hover:shadow-lg backdrop-blur-sm"
           >
             <button
-              className="w-full flex items-center justify-between text-lg font-semibold focus:outline-none text-white hover:text-white transition-colors select-text"
+              className="w-full flex items-center justify-between text-lg font-semibold focus:outline-none text-white hover:text-gray-200 transition-colors select-text"
               onClick={() => setOpen(open === idx ? null : idx)}
               aria-expanded={open === idx}
               aria-controls={`faq-content-${idx}`}
             >
               <span className="flex items-center gap-2">
-                <HelpCircle className="inline text-white" size={20} />
+                <HelpCircle className="inline text-gray-400" size={20} />
                 {faq.pergunta}
               </span>
-              <span className={`ml-4 text-xl transition-transform duration-200 text-white ${open === idx ? "rotate-180" : ""}`}>▼</span>
+              <span className={`ml-4 text-xl transition-transform duration-200 text-gray-400 ${open === idx ? "rotate-180" : ""}`}>▼</span>
             </button>
             <div
               id={`faq-content-${idx}`}
@@ -55,7 +55,7 @@ const Faq = () => {
               }`}
               aria-hidden={open !== idx}
             >
-              <p className="text-base text-white">{faq.resposta}</p>
+              <p className="text-base text-gray-300">{faq.resposta}</p>
             </div>
           </div>
         ))}
