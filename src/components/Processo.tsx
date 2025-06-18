@@ -42,10 +42,10 @@ const processos = [
 const Processo = () => (
   <section className="w-full max-w-7xl mx-auto py-20 px-4 bg-black">
     <div className="text-center mb-16">
-      <h2 className="text-3xl md:text-4xl font-black mb-6 tracking-tight text-white">
-        Nosso <span style={{ color: "#BCB9B2" }}>Processo</span> Completo
+      <h2 className="text-3xl md:text-4xl font-black mb-6 tracking-tight text-white animate-fade-in">
+        Nosso <span style={{ color: "#807f7e" }}>Processo</span> Completo
       </h2>
-      <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+      <p className="text-lg text-gray-300 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: "200ms" }}>
         Do seu conhecimento ao curso online de sucesso: cuidamos de cada detalhe para você focar no que sabe fazer melhor
       </p>
     </div>
@@ -57,7 +57,7 @@ const Processo = () => (
           <div
             key={processo.numero}
             className="bg-gray-900 rounded-3xl p-6 shadow-xl border border-gray-700 hover:shadow-2xl hover:scale-105 transition-all duration-300 group animate-fade-in relative overflow-hidden backdrop-blur-sm"
-            style={{ animationDelay: `${i * 150}ms` }}
+            style={{ animationDelay: `${i * 150 + 400}ms` }}
           >
             {/* Background gradient */}
             <div className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-br ${processo.cor} opacity-10 rounded-full -translate-y-12 translate-x-12 group-hover:scale-150 transition-transform duration-500`} />

@@ -21,17 +21,17 @@ const etapas = [
 
 const ComoFunciona = () => (
   <section className="w-full max-w-5xl mx-auto py-20 px-4 bg-black">
-    <h2 className="text-3xl font-black mb-12 text-center tracking-tight text-white">
-      Como funciona <span style={{ color: "#BCB9B2" }}>na prática?</span>
+    <h2 className="text-3xl font-black mb-12 text-center tracking-tight text-white animate-fade-in">
+      Como funciona <span style={{ color: "#807f7e" }}>na prática?</span>
     </h2>
     <div className="flex flex-col md:flex-row gap-10 md:gap-8 md:justify-between">
       {etapas.map((e, i) => (
         <div
           key={e.titulo}
           className="flex-1 bg-gray-900 border border-gray-700 rounded-3xl shadow-2xl p-10 flex flex-col items-center group hover:scale-105 hover:shadow-gray-800/20 transition-transform duration-300 animate-fade-in backdrop-blur-sm"
-          style={{ animationDelay: `${i * 80}ms` }}
+          style={{ animationDelay: `${i * 200 + 200}ms` }}
         >
-          <div className="mb-3 group-hover:scale-125 transition-transform">{e.icone}</div>
+          <div className="mb-3 group-hover:scale-125 transition-transform duration-300">{e.icone}</div>
           <h3 className="mt-1 text-xl font-bold text-white text-center">{e.titulo}</h3>
           <p className="mt-3 text-base text-gray-300 text-center font-medium">{e.desc}</p>
         </div>

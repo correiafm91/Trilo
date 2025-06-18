@@ -25,10 +25,10 @@ const depoimentos = [
 const Depoimentos = () => (
   <section className="w-full max-w-6xl mx-auto py-20 px-4 bg-black">
     <div className="text-center mb-16">
-      <h2 className="text-3xl md:text-4xl font-black mb-6 tracking-tight text-white">
-        O que nossos <span style={{ color: "#BCB9B2" }}>parceiros</span> dizem
+      <h2 className="text-3xl md:text-4xl font-black mb-6 tracking-tight text-white animate-fade-in">
+        O que nossos <span style={{ color: "#807f7e" }}>parceiros</span> dizem
       </h2>
-      <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+      <p className="text-lg text-gray-300 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "200ms" }}>
         Profissionais que já transformaram seu conhecimento em cursos de sucesso com a Kirvo
       </p>
     </div>
@@ -38,7 +38,7 @@ const Depoimentos = () => (
         <div
           key={dep.nome}
           className="bg-gray-900 rounded-3xl p-8 shadow-xl border border-gray-700 hover:shadow-2xl hover:scale-105 transition-all duration-300 group animate-fade-in relative overflow-hidden backdrop-blur-sm"
-          style={{ animationDelay: `${i * 100}ms` }}
+          style={{ animationDelay: `${i * 200 + 400}ms` }}
         >
           {/* Background pattern */}
           <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-gray-700 to-gray-800 opacity-20 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-500" />
