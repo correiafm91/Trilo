@@ -1,4 +1,5 @@
 
+
 const Footer = () => (
   <footer id="contato" className="w-full text-center py-16 px-4 text-white border-t border-gray-800 bg-black relative animate-fade-in">
     {/* Linha gradiente sutil base */}
@@ -12,10 +13,12 @@ const Footer = () => (
       
       <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-12">
         <a 
-          href="mailto:contato@kirvo.com.br"
+          href="https://form.respondi.app/BpTXDhAa"
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-white text-black font-bold px-8 py-3 rounded-full hover:bg-gray-200 transition-all duration-200 hover:scale-105"
         >
-          Enviar E-mail
+          Entrar em contato
         </a>
       </div>
     </div>
@@ -29,3 +32,4 @@ const Footer = () => (
 );
 
 export default Footer;
+
