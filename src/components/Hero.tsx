@@ -17,12 +17,12 @@ const Hero = () => (
       <ellipse cx="570" cy="180" rx="50" ry="24" fill="#374151" />
     </svg>
     <h1 className="relative z-10 text-4xl md:text-6xl font-black mb-6 leading-tight max-w-3xl drop-shadow-sm text-white">
-      Transforme <span className="text-gray-300">seu conhecimento</span> <br/>
-      em <span className="text-gray-300">cursos online</span> de sucesso <br />
-      com a <span className="text-gray-400">Trilo</span>
+      Transforme <span style={{ color: "#BCB9B2" }}>seu conhecimento</span> <br/>
+      em <span style={{ color: "#BCB9B2" }}>cursos online</span> de sucesso <br />
+      com a <span style={{ color: "#BCB9B2" }}>Kirvo</span>
     </h1>
     <p className="relative z-10 text-lg md:text-2xl text-white max-w-2xl mb-10 font-medium animate-fade-in">
-      <span className="bg-gray-800 px-1 rounded">É especialista em sua área?</span> A Trilo é a ponte para transformar a sua experiência em treinamentos online que entregam autoridade, resultados e renda recorrente.<br className="hidden md:inline" /> Comece sem complexidade, com equipe premiada em educação digital.
+      <span className="bg-gray-800 px-1 rounded">É especialista em sua área?</span> A Kirvo é a ponte para transformar a sua experiência em treinamentos online que entregam autoridade, resultados e renda recorrente.<br className="hidden md:inline" /> Comece sem complexidade, com equipe premiada em educação digital.
     </p>
     <a
       href="#contato"

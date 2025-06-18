@@ -22,7 +22,7 @@ const etapas = [
 const ComoFunciona = () => (
   <section className="w-full max-w-5xl mx-auto py-20 px-4 bg-black">
     <h2 className="text-3xl font-black mb-12 text-center tracking-tight text-white">
-      Como funciona <span className="text-gray-400">na prática?</span>
+      Como funciona <span style={{ color: "#BCB9B2" }}>na prática?</span>
     </h2>
     <div className="flex flex-col md:flex-row gap-10 md:gap-8 md:justify-between">
       {etapas.map((e, i) => (

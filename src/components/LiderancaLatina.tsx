@@ -52,7 +52,7 @@ const LiderancaLatina = () => (
         <h2 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
           A Maior Empresa<br />
           de Produção de Cursos<br />
-          da <span className="text-gray-400">América Latina</span>
+          da <span style={{ color: "#BCB9B2" }}>América Latina</span>
         </h2>
         <p className="text-xl text-gray-300 max-w-3xl mx-auto font-medium leading-relaxed">
           Transformamos conhecimento em negócios digitais há mais de uma década, 

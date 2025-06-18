@@ -43,7 +43,7 @@ const Processo = () => (
   <section className="w-full max-w-7xl mx-auto py-20 px-4 bg-black">
     <div className="text-center mb-16">
       <h2 className="text-3xl md:text-4xl font-black mb-6 tracking-tight text-white">
-        Nosso <span className="text-gray-400">Processo</span> Completo
+        Nosso <span style={{ color: "#BCB9B2" }}>Processo</span> Completo
       </h2>
       <p className="text-lg text-gray-300 max-w-3xl mx-auto">
         Do seu conhecimento ao curso online de sucesso: cuidamos de cada detalhe para você focar no que sabe fazer melhor

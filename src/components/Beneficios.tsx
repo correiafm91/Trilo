@@ -14,7 +14,7 @@ const beneficios = [
   },
   {
     titulo: "Zero Complexidade Técnica",
-    desc: "A Trilo resolve tudo: tecnologia, edição, plataforma e atendimento ao aluno.",
+    desc: "A Kirvo resolve tudo: tecnologia, edição, plataforma e atendimento ao aluno.",
     icone: <ShieldCheck size={36} className="text-white drop-shadow-md bg-gray-700 rounded-full p-1.5" />
   }
 ];
@@ -22,7 +22,7 @@ const beneficios = [
 const Beneficios = () => (
   <section className="w-full max-w-5xl mx-auto py-16 px-4 bg-black">
     <h2 className="text-3xl font-black mb-10 text-center tracking-tight text-white">
-      Por que escolher a <span className="text-gray-400">Trilo?</span>
+      Por que escolher a <span style={{ color: "#BCB9B2" }}>Kirvo?</span>
     </h2>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       {beneficios.map((b, i) => (

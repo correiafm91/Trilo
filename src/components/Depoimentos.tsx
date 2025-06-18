@@ -5,19 +5,19 @@ const depoimentos = [
   {
     nome: "Dr. Carlos Silva",
     cargo: "Médico Cardiologista",
-    texto: "A Trilo transformou meus 20 anos de experiência em cardiologia em um curso que já impactou mais de 5.000 profissionais. O processo foi incrivelmente profissional.",
+    texto: "A Kirvo transformou meus 20 anos de experiência em cardiologia em um curso que já impactou mais de 5.000 profissionais. O processo foi incrivelmente profissional.",
     estrelas: 5
   },
   {
     nome: "Marina Santos",
     cargo: "Consultora de Marketing",
-    texto: "Em 6 meses, meu curso de marketing digital se tornou referência no mercado. A equipe da Trilo cuidou de tudo enquanto eu focava no que sei fazer melhor.",
+    texto: "Em 6 meses, meu curso de marketing digital se tornou referência no mercado. A equipe da Kirvo cuidou de tudo enquanto eu focava no que sei fazer melhor.",
     estrelas: 5
   },
   {
     nome: "Prof. João Oliveira",
     cargo: "Engenheiro de Software",
-    texto: "Nunca imaginei que seria tão fácil transformar meu conhecimento técnico em um negócio lucrativo. A Trilo fez toda a diferença na minha carreira.",
+    texto: "Nunca imaginei que seria tão fácil transformar meu conhecimento técnico em um negócio lucrativo. A Kirvo fez toda a diferença na minha carreira.",
     estrelas: 5
   }
 ];
@@ -26,10 +26,10 @@ const Depoimentos = () => (
   <section className="w-full max-w-6xl mx-auto py-20 px-4 bg-black">
     <div className="text-center mb-16">
       <h2 className="text-3xl md:text-4xl font-black mb-6 tracking-tight text-white">
-        O que nossos <span className="text-gray-400">parceiros</span> dizem
+        O que nossos <span style={{ color: "#BCB9B2" }}>parceiros</span> dizem
       </h2>
       <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-        Profissionais que já transformaram seu conhecimento em cursos de sucesso com a Trilo
+        Profissionais que já transformaram seu conhecimento em cursos de sucesso com a Kirvo
       </p>
     </div>
 

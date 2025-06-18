@@ -12,7 +12,7 @@ const Footer = () => (
       
       <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-12">
         <a 
-          href="mailto:contato@trilo.com.br"
+          href="mailto:contato@kirvo.com.br"
           className="bg-white text-black font-bold px-8 py-3 rounded-full hover:bg-gray-200 transition-all duration-200 hover:scale-105"
         >
           Enviar E-mail
@@ -22,13 +22,7 @@ const Footer = () => (
     
     <div className="relative z-10 border-t border-gray-800 pt-8">
       <span className="text-gray-300 flex items-center justify-center gap-2">
-        © {new Date().getFullYear()} 
-        <img 
-          src="https://i.postimg.cc/L5VJKZ29/508648700-18063735398144210-1168888630606430414-n-removebg-preview.png" 
-          alt="Logo"
-          className="h-6 w-auto inline"
-        />
-        . Todos os direitos reservados.
+        © {new Date().getFullYear()} Kirvo. Todos os direitos reservados.
       </span>
     </div>
   </footer>

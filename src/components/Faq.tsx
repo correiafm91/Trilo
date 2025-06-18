@@ -5,7 +5,7 @@ import { HelpCircle } from "lucide-react";
 const faqs = [
   {
     pergunta: "Preciso já ter experiência com cursos online?",
-    resposta: "Não! Basta ter conhecimento real na sua área. A Trilo cuida de todo o processo para você transformar esse saber em cursos digitais de sucesso."
+    resposta: "Não! Basta ter conhecimento real na sua área. A Kirvo cuida de todo o processo para você transformar esse saber em cursos digitais de sucesso."
   },
   {
     pergunta: "Quais temas posso abordar?",
@@ -28,7 +28,7 @@ const Faq = () => {
     <section className="w-full max-w-3xl mx-auto py-16 px-4 bg-black">
       <h2 className="text-3xl font-black mb-8 text-center flex items-center justify-center gap-2 text-white">
         <HelpCircle className="text-gray-400 mb-1" size={28} />
-        Perguntas <span className="text-gray-400">Frequentes</span>
+        Perguntas <span style={{ color: "#BCB9B2" }}>Frequentes</span>
       </h2>
       <div className="space-y-5">
         {faqs.map((faq, idx) => (

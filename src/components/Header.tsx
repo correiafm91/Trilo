@@ -4,11 +4,7 @@ const Header = () => (
     {/* Linha gradiente sutil topo */}
     <div className="absolute left-0 top-0 w-full h-1.5 bg-gradient-to-r from-gray-600 via-gray-400 to-gray-600 opacity-60 pointer-events-none" />
     <div className="flex items-center">
-      <img 
-        src="https://i.postimg.cc/L5VJKZ29/508648700-18063735398144210-1168888630606430414-n-removebg-preview.png" 
-        alt="Logo"
-        className="h-8 md:h-10 w-auto select-none drop-shadow-sm"
-      />
+      <span className="text-2xl font-bold text-white">Kirvo</span>
     </div>
     <a
       href="#contato"
